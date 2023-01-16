@@ -59,8 +59,8 @@ spec:
       containers:
         - resources:
             limits:
-              cpu: '1'
-              memory: 2Gi
+              cpu: '10'
+              memory: 13Gi
             requests:
               cpu: '1'
               memory: 1Gi
@@ -136,9 +136,7 @@ spec:
               mountPath: /sostdata
           terminationMessagePolicy: File
           image: >-
-            registry/sostrades/api:latest
-#            image-registry.openshift-image-registry.svc:5000/sostrades/api:latest
-#            docker.io/library/api:latest
+            image-registry.openshift-image-registry.svc:5000/sostrades/api:latest
 
 
       restartPolicy: Always
