@@ -4,7 +4,6 @@ namespace: sostrades
 resources:
 - configmaps
 - secret
-- pv
 - pvc
 - deployment
 - service
